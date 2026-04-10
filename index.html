@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;1,400;1,700&amp;family=Public+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#5a6060",
+                        "surface": "#f9f9f8",
+                        "on-surface": "#2d3433",
+                        "error-container": "#fe8983",
+                        "background": "#f9f9f8",
+                        "tertiary": "#486272",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#dee4e2",
+                        "on-primary-fixed-variant": "#5c5b5b",
+                        "tertiary-fixed": "#d0ecff",
+                        "secondary-fixed-dim": "#d2d5d5",
+                        "on-primary-container": "#525151",
+                        "secondary-fixed": "#e1e3e3",
+                        "on-tertiary-container": "#3e5868",
+                        "surface-container": "#ebeeed",
+                        "on-tertiary": "#f4faff",
+                        "on-primary-fixed": "#403f3f",
+                        "on-secondary": "#f7f9fa",
+                        "secondary-container": "#e1e3e3",
+                        "tertiary-dim": "#3c5666",
+                        "surface-container-highest": "#dee4e2",
+                        "surface-bright": "#f9f9f8",
+                        "on-error": "#fff7f6",
+                        "on-primary": "#faf7f6",
+                        "outline-variant": "#adb3b2",
+                        "primary-fixed-dim": "#d7d4d3",
+                        "tertiary-fixed-dim": "#c2def0",
+                        "error": "#9f403d",
+                        "on-secondary-container": "#4f5253",
+                        "surface-container-high": "#e5e9e8",
+                        "on-tertiary-fixed": "#2c4655",
+                        "on-tertiary-fixed-variant": "#486272",
+                        "primary-fixed": "#e5e2e1",
+                        "on-background": "#2d3433",
+                        "secondary-dim": "#505454",
+                        "inverse-surface": "#0c0f0e",
+                        "on-secondary-fixed": "#3c4040",
+                        "tertiary-container": "#d0ecff",
+                        "outline": "#767c7b",
+                        "error-dim": "#4e0309",
+                        "surface-dim": "#d4dcda",
+                        "surface-container-low": "#f2f4f3",
+                        "inverse-on-surface": "#9c9d9c",
+                        "on-secondary-fixed-variant": "#595c5d",
+                        "primary": "#5f5e5e",
+                        "primary-dim": "#535252",
+                        "surface-tint": "#5f5e5e",
+                        "primary-container": "#e5e2e1",
+                        "on-error-container": "#752121",
+                        "secondary": "#5c6060",
+                        "inverse-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9f8;
+            font-family: 'Public Sans', sans-serif;
+        }
+        .serif-italic {
+            font-family: 'Newsreader', serif;
+            font-style: italic;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9f8] text-[#5f5e5e] fixed top-0 left-0 right-0 z-50 border-b border-[#767c7b] h-16 flex justify-between items-center px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+<h1 class="text-lg font-bold uppercase tracking-widest text-[#1A1A1A] font-serif italic">PROFESSIONAL LAW STUDIO</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center gap-4 text-[#5a6060] font-sans uppercase tracking-widest text-xs">
+<a class="hover:text-[#1A1A1A]" href="#">Practice Areas</a>
+<a class="hover:text-[#1A1A1A]" href="#">Attorneys</a>
+<a class="hover:text-[#1A1A1A]" href="#">Cases</a>
+<a class="hover:text-[#1A1A1A]" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+<span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
+<span class="material-symbols-outlined text-xl" data-icon="location_on">location_on</span>
+<span class="material-symbols-outlined text-xl ml-2" data-icon="menu">menu</span>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="border-b border-[#767c7b] p-6 md:p-12 lg:p-20 bg-surface">
+<div class="max-w-4xl border border-[#767c7b] p-8 md:p-16">
+<h2 class="text-4xl md:text-6xl font-headline italic tracking-tight text-on-surface mb-8 leading-none">
+                    Uncompromising defense. <br/>
+                    Architectural precision.
+                </h2>
+<div class="flex flex-col sm:flex-row gap-0">
+<button class="bg-primary text-on-primary font-label uppercase tracking-widest text-xs px-10 py-5 border border-on-surface hover:bg-on-primary-container transition-none">
+                        Request Consultation
+                    </button>
+<button class="bg-transparent text-primary font-label uppercase tracking-widest text-xs px-10 py-5 border border-l-0 border-on-surface hover:bg-surface-container transition-none">
+                        Our Dossier
+                    </button>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="border-b border-[#767c7b] grid grid-cols-1 md:grid-cols-2">
+<div class="border-r md:border-[#767c7b] p-6 md:p-12 flex flex-col justify-center bg-surface-container-low">
+<span class="font-label uppercase tracking-widest text-[10px] text-on-surface-variant mb-4">Personnel &amp; Resources</span>
+<h3 class="text-3xl font-headline text-on-surface mb-6 italic">A collective of strategic litigators and counselors.</h3>
+<p class="text-on-surface-variant font-body leading-relaxed max-w-md">
+                    Our studio operates with the structural integrity of a world-class architectural firm. We dismantle complex legal challenges and rebuild them into unshakeable defenses.
+                </p>
+</div>
+<div class="relative min-h-[400px]">
+<img alt="Legal team in sunlit office" class="absolute inset-0 w-full h-full object-cover" data-alt="Three professional lawyers in formal attire engaged in a strategic discussion around a minimalist desk in a bright, sunlit modern office with floor-to-ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJlDctT8iKnk25_vw9y2mOs-Y6GsrihptSG5TBQ4WsdLYHRIRXX__zHH5jYUMHLOVl7aNMRsMlKW4jANRyW1GTzbVHKXppzDd8BA6x3MQBBNs8xJo5UMYx88JbIy28v5kv0KE9JYIwlISeX6e4jME_smGxdYWn4ob4h6TEnM8HOmnwwY1YDoQ2nkGL4nIDNF9lc175WxUfsmkaodtSIFpDNn1-MLoD8U0_iLQeaKSIK8Klvl_1pcYXpQl8mI8qm-8MWxxJHB3Osl3J"/>
+</div>
+</section>
+<!-- Content Sections (Typography Contrast) -->
+<section class="grid grid-cols-1 md:grid-cols-3 bg-surface">
+<!-- Box 1 -->
+<div class="border-b md:border-b-0 md:border-r border-[#767c7b] p-8">
+<div class="bg-surface-container-high h-10 flex items-center px-4 border-b border-[#767c7b] -mx-8 -mt-8 mb-8">
+<span class="font-label uppercase tracking-widest text-[10px] font-bold">Protocol 01</span>
+</div>
+<h4 class="font-headline text-2xl italic mb-6">Corporate Governance</h4>
+<p class="font-body text-sm text-on-surface-variant leading-loose">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+<div class="mt-8 pt-8 border-t border-outline-variant flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest">Learn More</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Box 2 -->
+<div class="border-b md:border-b-0 md:border-r border-[#767c7b] p-8">
+<div class="bg-surface-container-high h-10 flex items-center px-4 border-b border-[#767c7b] -mx-8 -mt-8 mb-8">
+<span class="font-label uppercase tracking-widest text-[10px] font-bold">Protocol 02</span>
+</div>
+<h4 class="font-headline text-2xl italic mb-6">Risk Mitigation</h4>
+<p class="font-body text-sm text-on-surface-variant leading-loose">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+<div class="mt-8 pt-8 border-t border-outline-variant flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest">Case Studies</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Box 3 -->
+<div class="p-8">
+<div class="bg-surface-container-high h-10 flex items-center px-4 border-b border-[#767c7b] -mx-8 -mt-8 mb-8">
+<span class="font-label uppercase tracking-widest text-[10px] font-bold">Protocol 03</span>
+</div>
+<h4 class="font-headline text-2xl italic mb-6">Crisis Management</h4>
+<p class="font-body text-sm text-on-surface-variant leading-loose">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+<div class="mt-8 pt-8 border-t border-outline-variant flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest">Contact Expert</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- Statement Block -->
+<section class="border-t border-b border-[#767c7b] py-20 px-6 bg-surface-container">
+<div class="max-w-2xl mx-auto text-center">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary" data-icon="balance">balance</span>
+<p class="font-headline text-3xl italic leading-tight text-on-surface">
+                    "The law is not a static text; it is an active architecture that requires constant reinforcement."
+                </p>
+<p class="mt-6 font-label uppercase tracking-widest text-[10px] text-on-surface-variant">— Senior Partner A. Dossier</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#ebeeed] text-[#5f5e5e] font-sans text-[10px] tracking-wider uppercase border-t border-[#767c7b]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-0 w-full p-8">
+<div class="border-b md:border-b-0 md:border-r border-[#767c7b] p-4 flex flex-col justify-between">
+<div>
+<h5 class="text-sm font-bold text-[#1A1A1A] mb-4">LAW STUDIO</h5>
+<p class="normal-case leading-relaxed font-body">1221 Legal Plaza, 14th Floor<br/>Metropolis, NY 10012</p>
+</div>
+<div class="mt-8">
+<p>© 2024 LAW STUDIO. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+<div class="border-b md:border-b-0 md:border-r border-[#767c7b] p-4">
+<h6 class="font-bold mb-4 text-[#1A1A1A]">Expertise</h6>
+<ul class="space-y-2">
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Corporate Law</a></li>
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Litigation</a></li>
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Real Estate</a></li>
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Intellectual Property</a></li>
+</ul>
+</div>
+<div class="border-b md:border-b-0 md:border-r border-[#767c7b] p-4">
+<h6 class="font-bold mb-4 text-[#1A1A1A]">Resources</h6>
+<ul class="space-y-2">
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Legal Dossier</a></li>
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Client Portal</a></li>
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Annual Reviews</a></li>
+<li><a class="hover:text-[#1A1A1A] transition-none" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="p-4 flex flex-col justify-between">
+<h6 class="font-bold mb-4 text-[#1A1A1A]">Contact</h6>
+<p class="normal-case leading-relaxed font-body mb-4">For urgent matters, reach our switchboard at (555) 890-2231.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-[#1A1A1A]" data-icon="shield">shield</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-[#1A1A1A]" data-icon="assured_workload">assured_workload</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-[#1A1A1A]" data-icon="contract">contract</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
